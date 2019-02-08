@@ -7,6 +7,7 @@ return '1', and output information below.
 
 Available GPU List
 id	utilization.gpu(%)	memory.free(MiB)
+
 1 	0                 	10871           
 2 	0                 	11952           
 3 	0                 	11952           
