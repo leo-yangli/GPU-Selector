@@ -4,10 +4,10 @@ import time
 
 def get_available_gpu(num_gpu=1, min_memory=1000, sample=3, nitro_restriction=True, verbose=True):
     '''
-    :param num_gpu: the number GPU you want to use
-    :param min_memory: minimum of memory
-    :param sample: times of sample
-    :param nitro_restriction: will not distribute GPU-4 for you.
+    :param num_gpu: number of GPU you want to use
+    :param min_memory: minimum memory
+    :param sample: number of sample
+    :param nitro_restriction: if True then will not distribute the last GPU for you.
     :param verbose: verbose mode
     :return: str of best choices, e.x. '1, 2'
     '''
