@@ -19,9 +19,9 @@ def get_available_gpu(num_gpu=1, min_memory=1000, sample=3, nitro_restriction=Tr
         sum = info + (sum if sum is not None else 0)
         time.sleep(0.2)
     avg = sum//sample
-    available = avg[np.where(avg[:,2] > min_memory)]
     if nitro_restriction:
-        available = available[:-1]
+        avg = avg[:-1]
+    available = avg[np.where(avg[:,2] > min_memory)]    
     if available.shape[0] == 0:
         print('No GPU available')
         return ''
